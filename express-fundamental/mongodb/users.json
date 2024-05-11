@@ -1,0 +1,36 @@
+[
+    {
+        "_id": {
+          "$oid": "663b17e826529faddsd5fb6e"
+        },
+        "name": "John",
+        "age": 25,
+        "isMarried": false,
+        "salary": 10000,
+        "gender": "Male",
+        "__v": 0
+    },
+    {
+        "_id": {
+          "$oid": "663b17e8265234adf4d5fb6e"
+        },
+        "name": "Vishal",
+        "age": 31,
+        "isMarried": false,
+        "salary": 150000,
+        "gender": "Male",
+        "__v": 0
+    },
+    {
+        "_id": {
+          "$oid": "663b17e823229fadf4d5fb6e"
+        },
+        "name": "Margot",
+        "age": 27,
+        "isMarried": false,
+        "salary": 210000,
+        "gender": "Female",
+        "__v": 0
+    }
+]
+
