@@ -1,16 +1,16 @@
 // so this is our JS code...
 
 const express = require('express');
-require('dotenv').config();
-
 const app = express();
-
-const port = process.env.PORT;
-app.listen(port, () => console.log(`Server is running on port ${port}!`));
-
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const { dbConnect } = require('./utilities/db');
+require('dotenv').config();
+
+const port = process.env.PORT;
+dbConnect();
+app.listen(port, () => console.log(`Server is running on port ${port}!`));
 
 app.use(cors({
     origin: ['http://localhost:3000'],
