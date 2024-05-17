@@ -1,6 +1,6 @@
 import { lazy } from "react";
 const Home = lazy(() => import('../../views/Home'));
-export const sellerRoute = [
+export const sellerRoutes = [
     {
         path: '/',
         element: <Home />,

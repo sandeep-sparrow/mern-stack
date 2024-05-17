@@ -9,8 +9,8 @@ function App() {
 
     useEffect(() => {
         const routes = getRoutes();
-        console.log(routes);
         setAllRoutes([...allRoutes, routes]);
+        console.log('All Routes', allRoutes);
     }, [])
 
     return <Router allRoutes={allRoutes} />
