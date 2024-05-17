@@ -20,6 +20,7 @@ app.use(cors({
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+// uses param URL path and handler...
 app.use('/api', require('./routes/authRoutes'));
 
 app.get("/", (req, res) => res.send('My Backend!'));
