@@ -4,14 +4,12 @@ import api from "../../api/api";
 export const admin_login = createAsyncThunk(
     'auth/admin_login', // action type
     async(info, {rejectWithValue, fulfillWithValue}) => { // function with return's promise
-        console.log("Login Details:", info);
         try {
             const {data} = await api.post('/admin-login', info,
-                {withCredentials: true})
-            console.log(data);
+                {withCredentials: true});
+            localStorage.setItem('accessToken', data.token);
             return fulfillWithValue(data);
         } catch (error) {
-            console.log(error.response.data);
             return rejectWithValue(error.response.data);
         }
     } 
